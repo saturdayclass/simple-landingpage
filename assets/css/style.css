@@ -4,6 +4,11 @@
   src: url('../fonts/Poppins-Regular.ttf');
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   font-size: 10px;
   font-family: 'Raihan';
@@ -13,21 +18,27 @@ html {
 
 nav {
   display: flex;
-  padding: 1em 10em;
+  padding: 1.9em 10em;
   border-bottom: 1px solid #e6e9ec;
 }
 
 nav .text-brand {
   font-size: 1.6rem;
-  padding-top: 0.8em;
+  flex-basis: 70%;
 }
+
+/* 
+
+Flex basis -> mengatur lebar element
+
+*/
 
 nav ul {
   list-style: none;
 }
 
 nav ul li {
-  padding-top: 2.2em;
+  padding-top: 0.5em;
   display: inline-block;
 }
 
@@ -39,3 +50,47 @@ nav ul li a {
 }
 
 /* END SECTION NAVBAR */
+
+/* SECTION HEADER */
+
+header {
+  display: flex;
+}
+
+header .bagian-satu {
+  flex-basis: 50%;
+  padding: 14%;
+}
+
+header .bagian-satu .text-hello {
+  font-size: 4rem;
+}
+
+header .bagian-satu p {
+  font-size: 1.5rem;
+}
+
+header .bagian-satu .btn-info {
+  padding: 1em 1.5em;
+  margin-top: 1em;
+  border-radius: 3em;
+  border: none;
+  background-color: #4898de;
+  color: #fff;
+  transition: 0.6s ease;
+}
+
+header .bagian-satu .btn-info:hover {
+  padding-right: 5em;
+}
+
+header .bagian-dua {
+  flex-basis: 50%;
+}
+
+header .bagian-dua img {
+  margin-top: 15%;
+  margin-right: 5%;
+}
+
+/* END SECTION HEADER */
