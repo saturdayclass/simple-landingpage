@@ -1,0 +1,41 @@
+/* Font face */
+@font-face {
+  font-family: 'Raihan';
+  src: url('../fonts/Poppins-Regular.ttf');
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Raihan';
+}
+
+/* SECTION NAVBAR */
+
+nav {
+  display: flex;
+  padding: 1em 10em;
+  border-bottom: 1px solid #e6e9ec;
+}
+
+nav .text-brand {
+  font-size: 1.6rem;
+  padding-top: 0.8em;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  padding-top: 2.2em;
+  display: inline-block;
+}
+
+nav ul li a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #000;
+  padding-right: 1rem;
+}
+
+/* END SECTION NAVBAR */
